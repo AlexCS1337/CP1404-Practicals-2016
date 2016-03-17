@@ -1,9 +1,6 @@
 __author__ = 'Smoo'
 
-""" -- Strings format examples written by Alex
-This is just a test docstring
-
-"""
+# This does something
 name = "Gibson L-5 CES"
 year = 1992
 cost = 16035.40
