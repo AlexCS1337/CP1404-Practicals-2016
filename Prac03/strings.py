@@ -1,6 +1,9 @@
 __author__ = 'Smoo'
 
-# This does something
+""" -- Strings format examples!
+Check these out!
+
+"""
 name = "Gibson L-5 CES"
 year = 1992
 cost = 16035.40
