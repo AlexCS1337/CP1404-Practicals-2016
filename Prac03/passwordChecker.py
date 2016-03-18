@@ -17,9 +17,15 @@ print("Your password must be between 6 and 15 characters, and contain:\n"
       "and 1 or more special characters: !@#$%^^&*()_[]")
 
 password = input(">")
-while len(password) < MINIMUM_LENGTH or len(password) > MAXIMUM_LENGTH and len(password) in VALID_SPECIAL_CHARACTERS:
-    # for c in password:
-    #
+has_lower = False
+has_upper = False
+while len(password) < MINIMUM_LENGTH or len(password) > MAXIMUM_LENGTH:
+    for c in password:
+        if c.islower():
+            has_lower = True  # Needs updating
+        if c.isupper():
+            has_upper = True  # Needs updating
+
     print("Invalid password!")
     password = input(">")
 
