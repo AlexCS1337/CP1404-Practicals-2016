@@ -1,6 +1,6 @@
 __author__ = 'Alex'
 
-""" Password Checker written by Alex
+""" Password Checker written by Alex, 18 March 2016
 
 """
 
