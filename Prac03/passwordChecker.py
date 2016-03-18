@@ -6,6 +6,7 @@ __author__ = 'Alex'
 
 MINIMUM_LENGTH = 6
 MAXIMUM_LENGTH = 15
+VALID_SPECIAL_CHARACTERS = "!@#$%^^&*()_[]"
 
 
 print("Please enter a valid password")
@@ -16,7 +17,9 @@ print("Your password must be between 6 and 15 characters, and contain:\n"
       "and 1 or more special characters: !@#$%^^&*()_[]")
 
 password = input(">")
-while len(password) < MINIMUM_LENGTH or len(password) > MAXIMUM_LENGTH:
+while len(password) < MINIMUM_LENGTH or len(password) > MAXIMUM_LENGTH and len(password) in VALID_SPECIAL_CHARACTERS:
+    # for c in password:
+    #
     print("Invalid password!")
     password = input(">")
 
