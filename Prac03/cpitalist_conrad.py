@@ -6,9 +6,13 @@ MIN_PRICE = 1.0
 MAX_PRICE = 100.0
 INITIAL_PRICE = 10.0
 
+def format_currency(value):
+    print("${:,.2f}".format(value))
+
 price = INITIAL_PRICE
 day = 0
-print("Starting Price: ${:,.2f}".format(price))
+print("Starting Price: ", end='')
+format_currency(price)
 
 while price >= MIN_PRICE and price <= MAX_PRICE:
     priceChange = 0
@@ -25,4 +29,5 @@ while price >= MIN_PRICE and price <= MAX_PRICE:
 
     price *= (1 + priceChange)
     day += 1
-    print("On day", day, "${:,.2f}".format(price))
+    print("On day", day, end= ' ')
+    format_currency(price)
