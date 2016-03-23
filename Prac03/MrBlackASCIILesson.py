@@ -7,4 +7,5 @@ def get_number(lower, upper):
     while number.isdecimal() != True:
         print("Enter a valid number!")
         number = (input("Enter a number (10-50): "))
+
 get_number(10, 50)
