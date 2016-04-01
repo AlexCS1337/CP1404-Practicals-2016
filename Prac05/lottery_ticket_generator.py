@@ -10,7 +10,11 @@ while choice < 0:
     choice = int(input("How many quick picks? "))
 
 for i in range(choice):
-    for i in range(NUMBERS_PER_LINE):
+    numbers = []
+    for j in range(NUMBERS_PER_LINE):
         number = random.randint(MINIMUM, MAXIMUM)
+        while number in numbers:
+            number = random.randint(MINIMUM, MAXIMUM)
+        numbers.append(number)
         print(format(number, "2d"), end =" ")
     print()
