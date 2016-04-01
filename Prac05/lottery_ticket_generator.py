@@ -7,7 +7,7 @@ MAXIMUM = 45
 choice = int(input("How many quick picks? "))
 while choice < 0:
     print("That makes no sense!")
-    quickPicks = int(input("How many quick picks? "))
+    choice = int(input("How many quick picks? "))
 
 for i in range(choice):
     for i in range(NUMBERS_PER_LINE):
