@@ -1,6 +1,11 @@
 
 
 text = input("Enter a string: ")
-count = 0
 words = {}
-for word in words:
+
+for word in text.split(" "):
+    if word in words:
+        words[word] += 1
+    else:
+        words[word] = 1
+print(words)
