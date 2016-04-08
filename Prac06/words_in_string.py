@@ -2,6 +2,5 @@
 
 text = input("Enter a string: ")
 count = 0
-words = {text: count}
+words = {}
 for word in words:
-    print("Test")
