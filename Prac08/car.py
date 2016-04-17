@@ -23,3 +23,6 @@ class Car:
             self.fuel -= distance
         self.odometer += distance
         return distance
+
+    def __str__(self):
+        return self, self.fuel, self.odometer, self.distance
