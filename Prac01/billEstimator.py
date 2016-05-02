@@ -4,9 +4,9 @@ cents = float(input("Enter cents per kWh:"))
 dailyUse = float(input("Enter daily use in kWh:"))
 numBillingDays = float(input("Enter number of billing days:"))
 
-### Add calculation here
+result = cents + dailyUse + numBillingDays
 
-print("Estimated bill:")
+print("Estimated bill:", result)
 
 
 TARIFF_11 = 0.244618
@@ -19,9 +19,9 @@ if tariff == "11":
     dailyUse = float(input("Enter daily use in kWh:"))
     numBillingDays = float(input("Enter number of billing days:"))
 
-    print("Estimated bill:")
+
 elif tariff == "31":
     dailyUse = float(input("Enter daily use in kWh:"))
     numBillingDays = float(input("Enter number of billing days:"))
 
-    print("Estimated bill:")
+print("Estimated bill:")
