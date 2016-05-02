@@ -5,7 +5,7 @@ import random
 VOWELS = "aeiou"
 CONSONANTS = "bcdfghjklmnpqrstvwxyz"
 
-word_format = "ccvc"
+word_format = input("Enter the word format: ")
 word = ""
 
 for kind in word_format:
