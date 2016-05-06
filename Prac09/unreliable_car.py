@@ -28,16 +28,19 @@ class Car:
         return distance_driven
 
 class UnreliableCar(Car):
-    def __init__(self, fuel, reliability=0):
-        super().__init__(fuel)
+    def __init__(self, name, fuel, reliability=0):
+        super().__init__(name, fuel)
         self.reliability = reliability
 
     def drive(self, distance):
         random_number = random.randint(0, 100)
-        if self.reliability < random_number:
+        if self.reliability > random_number:
             distance_driven = super().drive(distance)
             return distance_driven
+        else:
+            return 0
 
-test = UnreliableCar(10, 10)
-test.drive(10)
-print(test)
+test = UnreliableCar('test', 1000, 50)
+for i in range(1000):
+    test.drive(1)
+    print(test)
