@@ -31,19 +31,19 @@ class Car:
 
 
 class Taxi(Car):
-    def __init__(self, name, fuel, price_per_km):
+    price_per_km = 1.2
+    def __init__(self, name, fuel):
         """ initialise a Taxi instance, based on parent class Car """
         super().__init__(name, fuel)
-        self.price_per_km = price_per_km
         self.current_fare_distance = 0
 
     def __str__(self):
         """ return a string representation like a car but with current fare distance"""
-        return "{}, ${:.2f}/km, {}km on current fare".format(super().__str__(), self.price_per_km, self.current_fare_distance)
+        return "{}, ${:.2f}/km, {}km on current fare".format(super().__str__(), Taxi.price_per_km, self.current_fare_distance)
 
     def get_fare(self):
         """ get the price for the taxi trip """
-        return self.price_per_km * self.current_fare_distance
+        return Taxi.price_per_km * self.current_fare_distance
 
     def start_fare(self):
         """ begin a new fare """
@@ -56,7 +56,7 @@ class Taxi(Car):
         return distance_driven
 
 def test():
-    pirus = Taxi('Pirus 1', 100, 1.20)
+    pirus = Taxi('Pirus 1', 100)
     pirus.drive(40)
     print(pirus.get_fare())
     pirus.start_fare()
