@@ -54,6 +54,7 @@ class Taxi(Car):
 
 class SilverServiceTaxi(Taxi):
     flagfall = 4.5
-    def __init__(self, name, fuel):
+    def __init__(self, name, fuel, fanciness):
         super().__init__(name, fuel)
+        self.fanciness = fanciness
 
