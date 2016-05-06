@@ -54,3 +54,16 @@ class Taxi(Car):
         distance_driven = super().drive(distance)
         self.current_fare_distance += distance_driven
         return distance_driven
+
+def test():
+    pirus = Taxi('Pirus 1', 100, 1.20)
+    pirus.drive(40)
+    print(pirus.get_fare())
+    pirus.start_fare()
+    pirus.drive(100)
+    print(pirus)
+
+
+
+if __name__ == "__main__":
+    test()
