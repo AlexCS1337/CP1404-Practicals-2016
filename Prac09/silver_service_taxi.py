@@ -9,7 +9,10 @@ class Car:
         return "{}, fuel={}, odo={}".format(self.name, self.fuel, self.odometer)
 
     def add_fuel(self, amount):
-        """ add amount to the car's fuel"""
+        """
+        Add fuel to the instance of the object, takes two parameters
+        :param amount: a positive integer
+        """
         self.fuel += amount
 
     def drive(self, distance):
