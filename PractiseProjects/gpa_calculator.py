@@ -23,8 +23,10 @@ def main():
 
 
 def determine_grade():
+    print("These are the grades you can achieve:\n"
+          "HD: High Distinction D: Distinction C: Credit P: Pass N: N/A")
     try:
-        choice = int(input("What is your total score?"))
+        choice = int(input("What is your total score?: "))
         if choice >= 85:
             print("Your grade is: HD")
         elif choice >= 75 and choice <= 84:
