@@ -18,6 +18,9 @@ def main():
         else:
             print("Invalid option")
 
+        print(MENU)
+        choice = input('>>>')
+
 
 def determine_grade():
     try:
