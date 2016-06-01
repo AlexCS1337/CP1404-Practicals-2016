@@ -27,11 +27,11 @@ def determine_grade():
         choice = int(input("What is your total score?"))
         if choice >= 85:
             print("Your grade is: HD")
-        elif choice > 75 and choice < 84:
+        elif choice >= 75 and choice <= 84:
             print("Your grade is: D")
-        elif choice > 65 and choice < 74:
+        elif choice >= 65 and choice <= 74:
             print("Your grade is: C")
-        elif choice > 50 and choice < 64:
+        elif choice >= 50 and choice <= 64:
             print("Your grade is P")
         else:
             print("Your grade is N")
